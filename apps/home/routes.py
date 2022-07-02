@@ -29,9 +29,6 @@ def route_template(template):
         segment = get_segment(request)
 
         # Serve the file (if exists) from app/templates/home/FILE.html
-        if template == "transaction.html":
-            print(".................................")
-            return render_template('investment/stock_info.html', segment='stock_info')
         return render_template("home/" + template, segment=segment)
 
     except TemplateNotFound:
