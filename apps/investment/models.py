@@ -49,7 +49,6 @@ class TransactionRecord(db.Model):
     product_code = db.Column(db.String(64)) #交易产品的代码，股票为股票代码，期货为期货代码
     product_name = db.Column(db.String(64)) #交易产品的名称
     transaction_time = db.Column(db.Date) #交易时间
-    organization = db.Column(db.String(64)) #交易机构
     price = db.Column(db.Float) #交易单价
     amount = db.Column(db.Integer) #交易份额
     total_price = db.Column(db.Float) #成交总价
